@@ -1,0 +1,195 @@
+    1  sudo hostnamectl set-hostname nexus
+    2  yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+    3  sudo yum -y install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+    4  pwd
+    5  ll
+    6  ls -a
+    7  java --version
+    8  java -version
+    9  cd /opt/
+   10  mkdir tools
+   11  sudo mkdir 
+   12  sudo mkdir tools
+   13  ls
+   14  wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+   15  sudo wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+   16  sudo tar -xvzf latest-unix.tar.gz
+   17  ls -lh
+   18  mv nexus-3.20.1-01 nexus
+   19  sudo mv nexus-3.20.1-01 nexus
+   20  mv nexus-3.22.1-02 nexus
+   21  pwd
+   22  yum uninstall -y nexus
+   23  ll
+   24  sudo rm -rf nexus-3.22.1-02/ sonatype-work/
+   25  ll
+   26  ls -l rh
+   27  cd rh
+   28  ls -al
+   29  cd ..
+   30  sudo mv latest-unix.tar.gz tools
+   31  ll
+   32  cd tools/
+   33  ll
+   34  tar -xvzf latest-unix.tar.gz
+   35  sudo tar -xvzf latest-unix.tar.gz
+   36  ls -lh
+   37  mv nexus-3.22.1-02 nexus
+   38  sudo mv nexus-3.22.1-02 nexus
+   39  sudo mv sonatype-work nexusdata
+   40  sudo useradd --system --no-create-home nexus
+   41  sudo chown -R nexus:nexus /opt/nexus
+   42  sudo chown -R nexus:nexus /opt/tools/nexus
+   43  sudo chown -R nexus:nexus /opt/nexusdata
+   44  sudo chown -R nexus:nexus /opt/tools.nexusdata
+   45  sudo chown -R nexus:nexus /opt/tools/nexusdata
+   46  sudo vim /opt/nexus/bin/nexus.vmoptions
+   47  sudo vim /opt/tools/nexus/bin/nexus.vmoptions
+   48  sudo vim /opt/tools/nexus/bin/nexus.rc
+   49  ls
+   50  cd nexus
+   51  ls
+   52  cd bin
+   53  ll
+   54  sudo vi nexus.rc 
+   55  sudo vim /opt/tools/nexus/etc/nexus-default.properties
+   56  sudo vim /etc/security/limits.conf
+   57  sudo vim /etc/systemd/system/nexus.service
+   58  systemctl daemon-reload
+   59  sudo systemctl daemon-reload
+   60  sudo systemctl enable nexus.service
+   61  ps -ef | grep nexus
+   62  cd /etc/systemd/system/
+   63  ll
+   64  cat nexus.service 
+   65  cd /opt/tools/nexus/bin/nexus
+   66  cd /opt/tools/nexus/bin/
+   67  ll
+   68  cat nexus
+   69  ll
+   70  sudo - nexus
+   71  su - neux
+   72  su - nexus
+   73  sudo su - nexus
+   74  sudo passwd nexus
+   75  sudo su - nexus
+   76  sudo reboot
+   77  users
+   78  user
+   79  cat /etc/passwd | grep nexus
+   80  systemctl enable nexus.service
+   81  sudo systemctl enable nexus.service
+   82  cd /etc/systemd/system/
+   83  ls
+   84  sudo vi nexus.service 
+   85  sudo systemctl daemon-reload
+   86  systemctl enable nexus.service
+   87  sudo systemctl enable nexus.service
+   88  cat nexus.service 
+   89  sudo vi nexus.service 
+   90  cat nexus.service 
+   91  sudo systemctl daemon-reload
+   92  sudo systemctl enable nexus.service
+   93  sudo systemctl start nexus.service
+   94  tail -f /opt/tools/nexusdata/nexus3/log/nexus.log
+   95  netstat -tunlp | grep 8081
+   96  sudo netstat -tunlp | grep 8181
+   97  sudo yum install nginx
+   98  sudo yum install -y epel-release
+   99  sudo yum install nginx
+  100  systemctl enable nginx
+  101  sudo systemctl enable nginx
+  102  sudo systemctl status nginx
+  103  sudo systemctl start nginx
+  104  sudo systemctl status nginx
+  105  sudo systemctl status nexus
+  106  sudo chkconfig nexus on
+  107  netstat | grep 8181
+  108  netstat | grep 8081
+  109  netstat
+  110  exit
+  111  ipconfig
+  112  ifconfig
+  113  cd /opt/tools/nexus
+  114  ls
+  115  cd bin/
+  116  ls
+  117  cat nexus.rc 
+  118  sudo adduser nexus
+  119  sudo vi nexus.rc
+  120  history
+  121  sudo vim /opt/tools/nexus/etc/nexus-default.properties
+  122  sudo echo ‘NEXUS_HOME=”opt/tools/nexus/”’ | sudo tee -a /home/nexus/.bashrc > /dev/null
+  123  cd /home/
+  124  ls
+  125  ll
+  126  sudo mkdir nexus
+  127  cd nexus/
+  128  sudo touch .bashrc
+  129  ll
+  130  la -al
+  131  ls -al
+  132  cd
+  133  cd /home/ssonti
+  134  ll
+  135  ls -al
+  136  cat .bashrc
+  137  sudo cp .bashrc /home/nexus/
+  138  cd /home/nexus/
+  139  ll
+  140  ls -al
+  141  cat .bashrc 
+  142  sudo echo ‘NEXUS_HOME=”opt/tools/nexus/”’ | sudo tee -a /home/nexus/.bashrc > /dev/null
+  143  sudo mod 777 nexus.service
+  144  sudo chmod 777 nexus.service
+  145  cd /etc/systemd/system/
+  146  ll
+  147  sudo chmod 777 nexus.service
+  148  ll
+  149  sudo systemctl daemon-reload
+  150  sudo systemctl enable nexus
+  151  sudo systemctl start nexus
+  152  sudo systemctl status nexus
+  153  sudo vim /opt/tools/nexus/etc/nexus-default.properties
+  154  sudo systemctl restart nexus.service us
+  155  sudo systemctl restart nexus.service
+  156  sudo systemctl status nexus.service
+  157  ps -ef | grep nexus
+  158  cd /tmp
+  159  ll
+  160  cat i4jdaemon__opt_tools_nexus_bin_nexus 
+  161  sudo vim /opt/tools/nexus/etc/nexus-default.properties
+  162  sudo systemctl restart nexus.service
+  163  sudo systemctl status nexus.service
+  164  ll
+  165  cat i4jdaemon__opt_tools_nexus_bin_nexus 
+  166  ping 127.0.0.1
+  167  ping 127.0.0.1:9001
+  168  sudo netstat tunlp | grep 9001
+  169  history > commandsfornexusintall.txt
+  170  cat commandsfornexusintall.txt 
+  171  exit
+  172  sudo systemctl status nexus
+  173  sudo netstat -tunlp | grep 9001
+  174  ifconfig | grep eth0
+  175  ifconfig
+  176  status systemctl status nginx
+  177  sudo systemctl status nginx
+  178  sudo systemctl status nexus
+  179  sudo systemctl status nginx
+  180  sudo netstat -tunlp | grep 9001
+  181  curl http://localhost:9001
+  182  history | grep settings
+  183  history | grep setting
+  184  sudo vim /opt/tools/nexus/etc/nexus-default.properties
+  185  sudo systemctl service restart nexus
+  186  sudo systemctl restart nexus
+  187  sudo systemctl status nginx
+  188  sudo systemctl restart nexus
+  189  sudo systemctl status nginx
+  190  sudo systemctl stop nginx
+  191  sudo systemctl status nginx
+  192  sudo systemctl status nexus
+  193  ifconfig
+  194  history
+  195  history > nexus.installation.txt
